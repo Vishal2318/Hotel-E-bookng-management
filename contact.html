@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+    <style type="text/css">
+    	html{
+
+    		height:100%;
+    		overflow: hidden;
+    	}
+    	body{
+    		color: #fff;
+    		margin: 0;
+    		padding: 0;
+    		perspective: 1px;
+    		transform-style: preserve-3d;
+    		height: 100%;
+    		overflow-y: scroll;
+    		overflow-x: hidden;
+    		font-family: "tahoma";
+    	}
+    	header{
+    		box-sizing: border-box;
+    		min-height: 100vh;
+    		padding: 30vw 0 5vw;
+    		position: relative;
+    		transform-style: inherit;
+    		width: 100vw;
+    	}
+    	header h1{
+    		margin-top: -20px;
+    		margin-left: -62%;
+    	}
+    	header, header:before{
+    		background: 50% 50% / cover;
+    	}
+    	header::before{
+    		bottom: 0;
+    		content: "";
+    		left: 0;
+    		position: absolute;
+    		right: 0;
+    		top: 0;
+    		display: block;
+    		background-image: url('image/bg_1.jpg');
+            background-size: cover;
+    		transform-origin: center center 0;
+    		transform: translateZ(-1px) scale(2);
+    		z-index: -1;
+    		min-height: 100vh;
+
+    	}
+    	header *{
+    		font-weight: normal;
+    		letter-spacing: 0.2em;
+    		text-align: center;
+    		margin: 0;
+    		padding: 1em 0;
+    	}
+
+
+
+
+nav{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top:-31%;
+    /*margin-left: -20%;*/
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-left: 10.5%;
+    transform: translateX(-90rem);
+    animation: slideIn .5s forwards;
+    margin-top: -6.3%;
+}
+
+.brand span{
+    color: crimson;
+    font-size: 6.2rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+ }
+
+nav ul li a{
+    padding: 1rem 0;
+    margin: 0 4.3rem;
+    position: relative;
+    letter-spacing: 2px;
+    color: #eee;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+	color:#ff6138; 
+}
+nav ul li a:last-child{
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6138;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+@keyframes slideIn {
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.contact{
+    margin-top: 900px;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-top: 5%;
+    background-color: #eee;
+    padding-bottom: 5%;
+}
+.col-md-3 p a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+.col-md-3 p{
+    letter-spacing: 0.7px;
+    color: grey;
+    font-family: tahoma;
+}
+.form1{
+    margin-top: 5%;
+}
+.form-control{
+    font-size: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    width: 40%;
+    height: 45px; 
+}
+.btn2{
+    font-size: 16px;padding-left: 5px;padding-right: 5px;width: 20%;
+                height: 50px;padding-top: 5px;padding-bottom: 3px;background-color: #ff6138;color: white;border:2px solid #ff6138;transition: 0.8s;border-radius: 2px;
+}
+.btn2:hover{
+    color: #ff6138;
+    background-color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+            <nav>
+                <h1 class="brand"><a href="index.html">Br<span>a</span>nd</a></h1>
+                <ul style="margin-right:9.5%;margin-top: -4%;">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+            
+    <h1 style="font-family: Baskerville Old Face;font-size: 63px;letter-spacing: -0.03em;margin-left: -58%;">Contact us </h1>
+</header>
+  
+    <section class="contact">
+         <div class="head">
+            <h2 style="font-family:Baskerville Old Face;font-size: 34px;">Contact Information</h2>
+          </div>
+          <div class="col-md-3">
+            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Email:</span> <a href="mailto:info@brand.com">info@brand.com</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Website</span> <a href="#">brand.com</a></p>
+          </div>
+        </div>
+          <div class="form1">
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div><br>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div><br>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div><br>
+              <div class="form-group">
+                <textarea name="comment"  class="form-control" style="height: 170px;" placeholder="Message"></textarea>
+              </div><br>
+              <div class="form-group">
+                <input type="submit" value="Send Message"  class="btn2">
+              </div>
+            </form>
+          
+          </div>
+
+          <div class="col-md-6" id="map"></div>
+        </div>
+      </section>
+
+
+<br><br>
+</body>
+</html>
