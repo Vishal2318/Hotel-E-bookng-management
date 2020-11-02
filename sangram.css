@@ -1,0 +1,97 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.container
+{
+	position: absolute;
+	left:0;
+	margin: auto;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 5px solid #ccc;
+	width: 70%;
+	height: 90vh;
+	padding: 1rem;
+}
+.heading
+{
+	background-color: #2eb82e;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem; 
+	width: 100%;
+	border-radius: 5px 5px 0 0;
+}
+.form-input
+{
+	border: 2px solid #ccc;
+	height: 76%;
+	padding: 2rem;
+	font-size: 1.1rem;
+}
+.one-box
+{
+	width: 100%;
+}
+.one-box input
+{
+	width: 93%;
+	font-size: 1.1rem;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+}
+
+.two-input
+{
+	width: 44%;
+	display: inline-block;
+	margin-right: 5%;
+	margin-bottom: 5%;
+}
+.two-input input
+{
+	width: 99%;
+	font-size: 1.1rem;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+}
+.two-input select
+{
+	width: 105%;
+	font-size: 1.25rem;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+}
+.btn-sub
+{
+	width: 100%;
+	text-align: center;
+}
+#button-submit
+{
+	width: 30%;
+	font-size: 1.1rem;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	margin-bottom: 2%;
+}
+
+.footer
+{
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid gray; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+}
+.footer span
+{
+	background:#fff; 
+	color: #2eb82e;
+    padding:0 10px; 
+}
