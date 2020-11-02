@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: tahoma;
+	}
+	.load{
+		animation: slide 2s;
+	}
+	.slider{
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		height: 100vh;
+		animation: slide 15s infinite;
+	}
+	.content{
+		color: #fff;
+		width: 100%;
+		height: 100vh;
+		/
+	}
+	.principal{
+		position: absolute;/*
+		background-color: rgba(250,250,250,0.8);*/
+		letter-spacing:2px; 
+		text-align: center;
+		margin-top: -50px;
+	}
+	.principal h1{
+		font-size: 70px;
+		margin-bottom: 20px;
+	}
+	.principal p{
+		font-size: 20px;
+	}
+	@keyframes slide{
+		0%{
+			background-image: url('image/bg_1.jpg');
+		}
+		25%{
+			background-image: url('image/bg_1.jpg');
+		}
+		25.01%{
+			background-image: url('image/bg_2.jpg');
+		}
+		50%{
+			background-image: url('image/bg_2.jpg');
+		}
+		50.01%{
+			background-image: url('image/bg_3.jpg');
+		}
+		75%{
+			background-image: url('image/bg_3.jpg');
+		}
+		75.01%{
+			background-image: url('image/bg_2.jpg');
+		}
+		100%{
+			background-image: url('image/bg_2.jpg');
+		}
+		
+	}
+
+
+
+
+
+nav{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-left: 15%;
+    transform: translateX(-90rem);
+    animation: slideIn .8s forwards;
+}
+
+.brand span{
+    color: crimson;
+    font-size: 6.2rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+ }
+
+nav ul li a{
+    padding: 1rem 0;
+    margin: 0 4.3rem;
+    position: relative;
+    letter-spacing: 2px;
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav ul li a:last-child{
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6138;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+@keyframes slideIn {
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.box{
+	background-color: #fff;
+	height: 450px;
+	width: 38%;
+	border-radius: 5px;
+	margin-top: 95px;
+	margin-left: 88%;
+}
+.box1{
+	/*background-color: black;*/
+	height: 80%;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 10%;
+    padding-top: 8%;
+}
+
+.btn1{
+	background-color:#ff6138;font-size: 20px;border-radius:2px;border:1px solid orange;color:white;height: 50px;
+                    width: 100%;margin-top: 6%;
+                    transition: 1s; 
+                    font-family:sans-serif;
+}
+.btn1:hover{
+	background-color: black;
+	cursor: pointer;
+}
+
+nav ul li a:hover{
+	color:#ff6138; 
+}
+
+</style>
+</head>
+<body>
+<div class="slider">
+	<div class="load">
+	</div>
+	<div class="content">
+		<div class="principal">
+			
+			<div class="container">
+            <nav>
+                <h1 class="brand"><a href="index.html">Br<span>a</span>nd</a></h1>
+                <ul style="margin-left: 15%;">
+                    
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="a.html">reservation</a></li> 
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="login.html">Login</a></li>
+                     
+                    <li><a href="about.html">About</a></li>
+                    <!--  -->                 
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="box">
+            	<div class="box1"><p style="font-size: 17px;margin-left: -68%;color: #404044;font-family:sans-serif;">Check in:</p><br>
+            		<input type="date" name="" placeholder="DD/MM/YYYY" style="margin-left: 0%;width: 98.5%;height: 50px;border: 2px solid #eee;font-size:20px;color: #8b8b92; ">
+                   <p style="font-size: 17px;margin-left: -62.5%;margin-top: 7%;color: #404044;font-family:sans-serif;">Check out:</p><br>
+            		<input type="date" name="" placeholder="DD/MM/YYYY" style="margin-left: 0%;width: 98.5%;height: 50px;border: 2px solid #eee;font-size:20px;color: #8b8b92; ">
+            		<p style="font-size: 17px;margin-left: -76%;margin-top: 7%;color:  #404044;font-family:sans-serif;">Guest:</p><br>
+            		<select style="width: 98.5%;border: 2px solid #eee;height: 50px;font-size: 17px;color: #8b8b92;">
+                    <option>1</option>
+                     <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                    </select><br>
+                    <button class="btn1">Check Availability</button>
+            	</div>
+            </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
